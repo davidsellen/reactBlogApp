@@ -17,7 +17,7 @@ class PostsNew extends Component {
                 <label>
                     {field.label}:
                 </label>
-                <input
+                <field.type
                     className="form-control"
                     type="text"
                     {...field.input}
@@ -44,18 +44,21 @@ class PostsNew extends Component {
                 <Field 
                     label="Title"
                     name="title"
+                    type="input"
                     component={this.renderField}
                     />
 
                  <Field 
                     label="Categories"
                     name="categories"
+                    type="input"
                     component={this.renderField}
                     />
 
                 <Field 
                     label="Content"
                     name="content"
+                    type="textarea"
                     component={this.renderField}
                     />
 
